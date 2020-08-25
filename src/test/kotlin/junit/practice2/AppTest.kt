@@ -16,4 +16,10 @@ class AppTest{
         val res = c.multi(1.0, 2.0)
         assertEquals(2.0, res, 0.0)
     }
+    @Test
+    fun testAddFail(){
+        val c = Calculator()
+        val res = c.add(1.0, 2.0)
+        assertEquals(2.0, res, 0.0) //bound to fail
+    }
 }
